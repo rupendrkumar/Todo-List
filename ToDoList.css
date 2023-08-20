@@ -1,0 +1,118 @@
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/* Styling paragraph elements */
+p{
+    color: gray;
+    display: inline;
+}
+p:hover{
+    cursor:pointer;
+}
+/* Styling placeholder */
+::placeholder{
+    font-size: large;
+}
+/* Styling header, footer and main sections */
+header,footer{
+    margin: 2%;
+    display: flex;
+    justify-content: space-between;
+}
+header , main{
+    margin: 2%;
+    border-bottom: 0.5px solid gray;
+}
+#task-box{
+    background-color: rgb(250, 244, 210);
+    margin: auto;
+    margin-top: 3%;
+    width: 500px;
+    height: auto;
+    border: 1px solid rgb(82, 5, 5);
+    border-radius: 1rem;
+}
+
+/*styling header and internal fields of header*/
+header{
+    display: flex;
+    flex-direction: column;
+    height: 15%;
+}
+#new-task{
+    display:flex;
+    position:relative;
+    height: 80%;
+    justify-content: space-between;
+}
+#hdr-btm{
+    display: flex;
+    justify-content: space-between;
+    font-size: smaller;
+}
+#task{
+    width: 100%;
+    height: 90%;
+    border:none;
+    border-radius: 0.5rem;
+}
+.add{
+    display: none;
+    font-size: medium;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color:white;
+    border: none;
+    border-radius: 0.5rem;
+    height: 80%;
+}
+
+.new-button-active{
+    display: block;
+    font-size: medium;
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    background-color:white;
+    border: none;
+    border-radius: 0.5rem;
+    height: 80%;
+}
+
+/* Styling footer section */
+footer{
+    word-spacing: 3px;
+    font-size: smaller;
+}
+/* Styling list elements of main section */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+  ul li {
+    padding: 10px;
+    padding-left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: inherit;
+    align-items: center;
+    overflow:hidden;
+}
+#list input:checked + label {
+    text-decoration: line-through;
+}
+.show:active{
+    color: black;
+}
+
+.delete{
+    display: none;
+}
+
+li:hover .delete{
+    display: block;
+}
