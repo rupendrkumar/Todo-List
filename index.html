@@ -1,0 +1,40 @@
+<html>
+    <head>
+        <script src="https://kit.fontawesome.com/33eaaa0ede.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="ToDoList.css">
+        <title>
+            ToDO List
+        </title>
+    </head>
+
+    <body>
+
+        <div id="task-box">
+            <header>
+                <div id="new-task">
+                    <input id="task" class="new-task" onkeyup="typing()" placeholder="Enter your task" data-helloworld="asdasd"/>
+                    <button id="new-button" class="add">ADD </button>
+                    
+                </div>
+                <div id="hdr-btm">
+                    <p id="all-done" class="show"><i class="fa-solid fa-check-double"></i>Complete All Tasks</p>
+                    <p id="erase" class="show">Clear completed</p>
+                </div>
+            </header>
+            <main>
+                <ul id="list"> 
+                </ul>
+            </main>
+            <footer>
+                <span id="tasks" style="word-spacing:0;"> <span id="display">0</span>&nbsp;Tasks Left</span>
+                <div>
+                    <p id="all-tasks" style="color: black;">All</p>
+                    <p id="uncompleted">Uncompleted</p>
+                    <p id="done">Completed</p>
+                </div>
+            </footer>
+        </div>
+        
+        <script src="ToDoList.js"></script>
+    </body>
+</html>
